@@ -1,0 +1,28 @@
+core: 8.x
+type: theme
+
+name: 'CorporateClean'
+description: 'A flexible, recolorable theme with many regions supported by <a href="http://www.morethanthemes.com/" target="_blank">More Than (just) Themes</a>. If you like this theme, we encourage you to try also our other <a href="http://www.morethanthemes.com" target="_blank">Premium</a> and <a href="http://drupalizing.com" target="_blank">Free</a> Drupal themes.'
+
+regions:
+  navigation: 'Navigation'
+  search_area: 'Search area'
+  highlighted: 'Highlighted'
+  banner: 'Banner'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  sidebar_first: 'First sidebar'
+  sidebar_second: 'Second sidebar'
+  banner: 'Banner'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer: 'Footer'
+  footer_bottom_right: 'Footer bottom right'
+  help: 'Help'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+ - corporateclean/style
+ - corporateclean/js

@@ -1,0 +1,38 @@
+<div id="header">
+ <!-- #header-inside -->
+    <div id="header-inside" class="container_12 clearfix">
+     <!-- #header-inside-left -->
+        <div id="header-inside-left" class="grid_8">
+          {% if site_logo %}
+            <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}">
+              <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+            </a>
+          {% endif %}
+          <div class="clearfix">
+
+          {% if site_name %}
+            <span id="site-name">
+              <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}">
+                {{ site_name }}
+              </a>
+            </span>
+            {% endif %}
+            {% if site_slogan %}
+              <span id="slogan">{{ site_slogan }}</span>
+            {% endif %}
+          </div>
+            
+        </div><!-- EOF: #header-inside-left -->
+        
+        <!-- #header-inside-right -->    
+        <div id="header-inside-right" class="grid_4">
+
+          {% if page.search_area %}
+            {{ page.search_area }}
+          {% endif %}
+
+        </div><!-- EOF: #header-inside-right -->
+    
+    </div><!-- EOF: #header-inside -->
+
+</div><!-- EOF: #header -->

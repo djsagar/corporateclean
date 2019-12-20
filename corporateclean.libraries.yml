@@ -1,0 +1,35 @@
+style:
+  css:
+    theme:
+      css/960.css: { media: all and (min-width: 980px) }
+      css/720.css: { media: all and (min-width: 760px) and (max-width: 980px) }
+      css/mobile.css: { media: all and (max-width: 760px) }
+      style.css: {}
+      color/colors.css: {}
+basic-layout:
+  css:
+    component:
+      css/basic-layout.css: { preprocess: false, group: CSS_THEME, browsers: { IE: 'lte IE 8', '!IE': false } }
+
+ie:
+  css:
+    component:
+      css/ie.css: {preprocess: false, group: CSS_THEME, browsers: { IE: 'lte IE 8', '!IE': false } }
+
+js:
+  js:
+    js/jquery.cycle.all.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+
+color.preview:
+  version: 1.0
+  css:
+    theme:
+      color/preview.css: {}
+  js:
+    color/preview.js: {}
+  dependencies:
+   - color/drupal.color
